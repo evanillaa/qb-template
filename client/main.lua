@@ -40,10 +40,14 @@ RegisterNetEvent('QBCore:Player:SetPlayerData', function(val)
     PlayerData = val
 end)
 
+-- Threads
+
 CreateThread(function()
 	if LocalPlayer.state.isLoggedIn then
 		print("https://github.com/evanillaa/qb-template")
 	end
 end)
+
+-- Exports
 
 exports('SetTemplate', SetTemplate)
