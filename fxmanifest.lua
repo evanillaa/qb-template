@@ -8,4 +8,7 @@ shared_script 'config.lua'
 server_script 'server/main.lua'
 client_script 'client/main.lua'
 
+--server_script 'server/*.lua'
+--client_script 'client/*.lua'
+
 lua54 'yes'
