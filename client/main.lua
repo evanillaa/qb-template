@@ -4,6 +4,12 @@ local QBCore = exports['qb-core']:GetCoreObject()
 local PlayerData = QBCore.Functions.GetPlayerData()
 local CurrentCops = 0
 
+-- Functions
+
+local function SetTemplate()
+    print("https://github.com/evanillaa/qb-template")
+end
+
 -- Events
 
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
@@ -39,3 +45,5 @@ CreateThread(function()
 		print("https://github.com/evanillaa/qb-template")
 	end
 end)
+
+exports('SetTemplate', SetTemplate)
