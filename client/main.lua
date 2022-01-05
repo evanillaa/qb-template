@@ -43,7 +43,7 @@ end)
 -- Threads
 
 CreateThread(function()
-	if LocalPlayer.state.isLoggedIn then
+	if LocalPlayer.state.isLoggedIn and PlayerData.job.name == 'police' then
 		print("https://github.com/evanillaa/qb-template")
 	end
 end)
