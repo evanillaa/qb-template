@@ -6,6 +6,7 @@
 # Dependencies
 * [qb-core](https://github.com/qbcore-framework)
 
+# Change Logs
 ### 1.0
 * Initial release
 
