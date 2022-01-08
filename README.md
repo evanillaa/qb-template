@@ -1,6 +1,6 @@
 # QBCore Template Script
 
-# qb-template used with QBCore Framework
+qb-template used with QBCore Framework
 <br>
 
 # Dependencies
