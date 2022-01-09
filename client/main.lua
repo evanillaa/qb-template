@@ -3,6 +3,7 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 local PlayerData = QBCore.Functions.GetPlayerData()
 local CurrentCops = 0
+local Police = false
 
 -- Functions
 
@@ -51,3 +52,7 @@ end)
 -- Exports
 
 exports('SetTemplate', SetTemplate)
+
+exports('iPolice', function()
+  return Police
+end)
