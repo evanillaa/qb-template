@@ -3,7 +3,7 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 local PlayerData = QBCore.Functions.GetPlayerData()
 local CurrentCops = 0
-local Police = false
+local Inside = false
 
 -- Functions
 
@@ -44,7 +44,7 @@ end)
 -- Threads
 
 CreateThread(function()
-	if LocalPlayer.state.isLoggedIn and PlayerData.job.name == 'police' then
+	if LocalPlayer.state.isLoggedIn and PlayerData.job.name == 'police' and Inside then
 		print("https://github.com/evanillaa/qb-template")
 	end
 end)
@@ -53,6 +53,6 @@ end)
 
 exports('SetTemplate', SetTemplate)
 
-exports('iPolice', function()
-  return Police
+exports('Inside', function()
+  return Inside
 end)
