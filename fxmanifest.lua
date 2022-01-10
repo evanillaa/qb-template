@@ -8,7 +8,11 @@ shared_script 'config.lua'
 server_script 'server/main.lua'
 client_script 'client/main.lua'
 
---server_script 'server/*.lua'
+-- server_scripts {
+    -- '@oxmysql/lib/MySQL.lua',
+    -- 'server/*.lua'
+-- }
+
 --client_script 'client/*.lua'
 
 -- ui_page 'html/index.html'
