@@ -8,6 +8,16 @@ shared_script 'config.lua'
 server_script 'server/main.lua'
 client_script 'client/main.lua'
 
+
+-- ui_page 'html/index.html'
+
+-- files {
+	-- 'html/*.html',
+	-- 'html/*.js',
+	-- 'html/*.png',
+	-- 'html/*.css',
+-- }
+
 --server_script 'server/*.lua'
 --client_script 'client/*.lua'
 
