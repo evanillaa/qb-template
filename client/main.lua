@@ -15,10 +15,17 @@ end
 
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
     PlayerData = QBCore.Functions.GetPlayerData()
+    QBCore.Functions.TriggerCallback('qb-template:server:GetPermissions', function(UserGroup)
+        group = UserGroup
+    end)
 end)
 
 RegisterNetEvent('QBCore:Client:OnPlayerUnload', function()
     PlayerData = {}
+end)
+
+RegisterNetEvent('QBCore:Client:OnPermissionUpdate', function(UserGroup)
+    group = UserGroup
 end)
 
 RegisterNetEvent('QBCore:Client:OnJobUpdate', function(JobInfo)
