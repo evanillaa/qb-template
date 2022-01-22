@@ -2,6 +2,7 @@
 
 local QBCore = exports['qb-core']:GetCoreObject()
 local PlayerData = QBCore.Functions.GetPlayerData()
+local group = 'user'
 local CurrentCops = 0
 local Inside = false
 
