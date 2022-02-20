@@ -2,6 +2,7 @@
 
 local QBCore = exports['qb-core']:GetCoreObject()
 local PlayerData = QBCore.Functions.GetPlayerData()
+local isLoggedIn = LocalPlayer.state['isLoggedIn']
 local group = 'user'
 local CurrentCops = 0
 local Inside = false
@@ -52,7 +53,7 @@ end)
 -- Threads
 
 CreateThread(function()
-	if LocalPlayer.state.isLoggedIn and PlayerData.job.name == 'police' and Inside then
+	if isLoggedIn and PlayerData.job.name == 'police' and Inside then
 		print("https://github.com/evanillaa/qb-template")
 	end
 end)
