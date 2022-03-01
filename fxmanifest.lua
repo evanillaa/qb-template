@@ -11,11 +11,11 @@ client_script 'client/main.lua'
 
 ui_page 'html/index.html'
 
-files {
-	'html/*.html',
-	'html/*.js',
-	'html/*.png',
-	'html/*.css',
-}
+--files {
+--	'html/*.html',
+--	'html/*.js',
+--	'html/*.png',
+--	'html/*.css',
+--}
 
 lua54 'yes'
